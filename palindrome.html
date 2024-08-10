@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+            //   let pal=+prompt("enter number:");
+            //   let temp=pal;
+            //   let res=0;
+            //   let reminder=0;
+            //   while(temp>0){
+            //       reminder=temp%10;
+            //       res=(res*10)+reminder;
+            //       temp=Math.floor(temp/10);
+
+            //   }
+            //   if(pal==res){
+            //       alert(`${pal} is a palindrome Number`);
+            //   }
+            //   else{
+            //       alert(`${pal} is not a palindrome number`)
+            //   }
+
+              function palindrome(pal){
+                  let temp=pal;
+                  let res=0;
+                  let reminder=0;
+              while(temp>0){
+                  reminder=temp%10;
+                  res=(res*10)+reminder;
+                  temp=Math.floor(temp/10);
+
+              }
+              if(pal==res){
+                  alert(`${pal} is a palindrome Number`);
+              }
+              else{
+                  alert(`${pal} is not a palindrome number`)
+              }
+
+              }
+
+      let pal=+prompt("enter number:");
+      palindrome(pal);
+    </script>
+  </body>
+</html>
